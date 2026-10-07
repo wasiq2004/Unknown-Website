@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partners | Antony International Medical Studies</title>
+  <meta name="description" content="Universities, hospitals, government agencies and institutions: work with AIMS.">
+  <meta name="theme-color" content="#143D33">
+  <meta property="og:title" content="Partners | Antony International Medical Studies">
+  <meta property="og:description" content="Universities, hospitals, government agencies and institutions: work with AIMS.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="AIMS home">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <ellipse cx="20" cy="20" rx="8" ry="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M3 14h34M3 26h34" stroke="currentColor" stroke-width="1.5"/>
+          <path class="brand-mark-rise" d="M9 31 L16 24 L22 26 L31 11" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">AIMS</span>
+          <span class="brand-full">Antony International Medical Studies</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="student-journey.html">Student journey</a>
+        <a href="values.html">Values</a>
+        <a href="partners.html" aria-current="page">Partners</a>
+        <a class="btn btn-primary btn-small" href="contact.html">Book counseling</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap page-head-grid">
+        <div>
+          <h1 class="page-title">Our partnership model</h1>
+          <p class="page-lede">Antony International Medical Studies seeks to develop professional relationships across education, healthcare, government and industry.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="section partners" aria-labelledby="partners-title">
+      <div class="wrap partners-grid">
+        <div class="partners-head">
+          <h2 class="h2" id="partners-title">We seek to work with</h2>
+          <p class="lead">
+            Through these partnerships, we aim to create a sustainable international education ecosystem connecting
+            students, universities, healthcare institutions, industry, and communities.
+          </p>
+        </div>
+        <ul class="partner-list">
+          <li>Universities and colleges</li>
+          <li>Medical and healthcare institutions</li>
+          <li>Government and educational agencies</li>
+          <li>Hospitals and healthcare organizations</li>
+          <li>International education partners</li>
+          <li>Student recruitment organizations</li>
+          <li>Professional associations</li>
+          <li>Training and skills-development institutions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section partner-form-section" id="partner-form" aria-labelledby="pform-title">
+      <div class="wrap partner-form-grid">
+        <div class="partner-form-copy">
+          <h2 class="h2" id="pform-title">Propose a partnership</h2>
+          <p>
+            Tell us about your institution or organization and how you'd like to work together. Our team will
+            reply to discuss next steps.
+          </p>
+        </div>
+
+        <div class="form-card" data-form-card>
+          <div data-form-view>
+            <form class="enquiry" novalidate data-form="partner">
+              <div class="field">
+                <label for="p-org">Institution or organization</label>
+                <input id="p-org" name="org" type="text" autocomplete="organization" required>
+                <p class="field-error" id="p-org-err" hidden></p>
+              </div>
+              <div class="field">
+                <label for="p-type">Type of organization</label>
+                <select id="p-type" name="type" required>
+                  <option value="">Choose a type</option>
+                  <option>Universities and colleges</option>
+                  <option>Medical and healthcare institutions</option>
+                  <option>Government and educational agencies</option>
+                  <option>Hospitals and healthcare organizations</option>
+                  <option>International education partners</option>
+                  <option>Student recruitment organizations</option>
+                  <option>Professional associations</option>
+                  <option>Training and skills-development institutions</option>
+                  <option>Other</option>
+                </select>
+                <p class="field-error" id="p-type-err" hidden></p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="p-name">Your name</label>
+                  <input id="p-name" name="name" type="text" autocomplete="name" required>
+                  <p class="field-error" id="p-name-err" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="p-country">Country</label>
+                  <input id="p-country" name="country" type="text" autocomplete="country-name" required>
+                  <p class="field-error" id="p-country-err" hidden></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="p-email">Work email</label>
+                <input id="p-email" name="email" type="email" autocomplete="email" required>
+                <p class="field-error" id="p-email-err" hidden></p>
+              </div>
+              <div class="field">
+                <label for="p-message">How would you like to work together? <span class="optional">(optional)</span></label>
+                <textarea id="p-message" name="message" rows="4"></textarea>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Send partnership enquiry</button>
+            </form>
+          </div>
+          <div class="form-done" data-form-done hidden tabindex="-1">
+            <svg class="done-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M14 25l7 7 13-15"/></svg>
+            <h2 class="form-title">Your enquiry is ready to send</h2>
+            <p>We've opened your email app with your details filled in. Press send and the AIMS team will reply.</p>
+            <p class="form-done-alt" data-done-alt></p>
+            <button class="btn btn-ghost" type="button" data-form-edit>Edit my details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Antony International Medical Studies</p>
+        <p class="footer-tagline">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+      </div>
+      <div class="footer-contact">
+        <h2 class="footer-heading">Contact</h2>
+        <ul data-contact-list></ul>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <h2 class="footer-heading">Explore</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="student-journey.html">Student journey</a></li>
+          <li><a href="values.html">Values</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <p>&copy; <span data-year>2026</span> Antony International Medical Studies</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
