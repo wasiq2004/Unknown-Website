@@ -1,160 +1,340 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Programs | Antony International Medical Studies</title>
-  <meta name="description" content="Medicine, Nursing, Pharmacy, Dentistry, Engineering, IT, AI, Business, Hospitality and more.">
-  <meta name="theme-color" content="#143D33">
-  <meta property="og:title" content="Programs | Antony International Medical Studies">
-  <meta property="og:description" content="Medicine, Nursing, Pharmacy, Dentistry, Engineering, IT, AI, Business, Hospitality and more.">
+  <title>Programs | Antony International Medical Studies (AIMS)</title>
+  <meta name="description" content="Medicine, Nursing, Pharmacy, Dentistry, Engineering, IT, Artificial Intelligence, Business, Hospitality and other programs.">
+  <meta name="theme-color" content="#004090">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Antony International Medical Studies">
+  <meta property="og:title" content="Programs | Antony International Medical Studies (AIMS)">
+  <meta property="og:description" content="Medicine, Nursing, Pharmacy, Dentistry, Engineering, IT, Artificial Intelligence, Business, Hospitality and other programs.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (!("IntersectionObserver" in window)) return;
+      d.classList.add("js-motion");
+      setTimeout(function () { if (!window.AIMS_MOTION_READY) d.classList.remove("js-motion"); }, 3000);
+    })();
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" data-header>
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="AIMS home">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <ellipse cx="20" cy="20" rx="8" ry="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M3 14h34M3 26h34" stroke="currentColor" stroke-width="1.5"/>
-          <path class="brand-mark-rise" d="M9 31 L16 24 L22 26 L31 11" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">AIMS</span>
-          <span class="brand-full">Antony International Medical Studies</span>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Antony International Medical Studies, home">
+        <img class="brand-emblem" src="assets/img/logo-emblem.png" alt="" width="300" height="208">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">ANTONY</span>
+          <span class="brand-line brand-line-green">INTERNATIONAL</span>
+          <span class="brand-line">MEDICAL STUDIES</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="visually-hidden">Menu</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
-        <a href="about.html">About</a>
-        <a href="programs.html" aria-current="page">Programs</a>
-        <a href="student-journey.html">Student journey</a>
-        <a href="values.html">Values</a>
-        <a href="partners.html">Partners</a>
-        <a class="btn btn-primary btn-small" href="contact.html">Book counseling</a>
+      <nav class="main-nav" id="main-nav" aria-label="Main" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html" aria-current="page">Programs</a></li>
+          <li><a href="student-journey.html">Student Journey</a></li>
+          <li><a href="values.html">Our Values</a></li>
+          <li><a href="partners.html">Partnerships</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book Counseling</a>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-label>Open menu</span>
+        <svg class="icon icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></svg>
+        <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="page-head">
-      <div class="wrap page-head-grid">
-        <div>
-          <h1 class="page-title">Our educational focus</h1>
-          <p class="page-lede">Antony International Medical Studies can facilitate international student recruitment for the programs below. Choose any program to ask us about it.</p>
-        </div>
-        
+    <section class="page-banner">
+      <img src="assets/img/photos/anatomy-lesson.webp" alt="" width="1920" height="1280" fetchpriority="high" decoding="async" class="page-banner-img">
+      <div class="container page-banner-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Programs</li>
+          </ol>
+        </nav>
+        <h1 data-split>Our Educational Focus</h1>
+        <p>Antony International Medical Studies can facilitate international student recruitment for programs in medicine, healthcare, technology, business and more.</p>
       </div>
     </section>
 
-    <section class="section programs" aria-labelledby="med-title">
-      <div class="wrap program-group">
-        <div class="program-group-head">
-          <h2 class="h2" id="med-title">Medicine &amp; Healthcare</h2>
-          <p>Nine programs for careers in medicine, nursing and the health sciences.</p>
+    <nav class="subnav" aria-label="Program categories">
+      <div class="container">
+        <ul>
+          <li><a href="#medicine">Medicine &amp; Healthcare</a></li>
+          <li><a href="#professional">Professional &amp; Technology</a></li>
+          <li><a href="#other">Other Academic Programs</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="medicine" aria-labelledby="medicine-title">
+      <div class="container">
+        <div class="category-head">
+          <div class="category-photo"><img src="assets/img/photos/medicine-healthcare.webp" alt="Healthcare professionals in scrubs walking along a hospital corridor" width="1200" height="800" loading="lazy" decoding="async"></div>
+          <div>
+            <h2 class="section-title" id="medicine-title">Medicine &amp; Healthcare</h2>
+            <p class="section-intro">Nine programs for careers in medicine, nursing and the health sciences. Select a program to enquire about it.</p>
+          </div>
         </div>
-        <ul class="program-list">
-            <li><a class="program" href="contact.html?program=Doctor%20of%20Medicine"><span class="program-name">Doctor of Medicine</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Nursing"><span class="program-name">Nursing</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Pharmacy"><span class="program-name">Pharmacy</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Medical%20Laboratory%20Sciences"><span class="program-name">Medical Laboratory Sciences</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Radiologic%20Technology"><span class="program-name">Radiologic Technology</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Physical%20Therapy"><span class="program-name">Physical Therapy</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Dentistry"><span class="program-name">Dentistry</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Public%20Health"><span class="program-name">Public Health</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Allied%20Health%20Sciences"><span class="program-name">Allied Health Sciences</span><span class="program-ask">Ask about this program</span></a></li>
-          </ul>
+        <ul class="program-tiles">
+            <li>
+              <a class="program-tile" href="contact.html?program=Doctor%20of%20Medicine">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 2v2" /> <path d="M5 2v2" /> <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /> <path d="M8 15a6 6 0 0 0 12 0v-3" /> <circle cx="20" cy="10" r="2" /></svg></span>
+                <span class="program-tile-name">Doctor of Medicine</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Nursing">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg></span>
+                <span class="program-tile-name">Nursing</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Pharmacy">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" /> <path d="m8.5 8.5 7 7" /></svg></span>
+                <span class="program-tile-name">Pharmacy</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Medical%20Laboratory%20Sciences">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18h8" /> <path d="M3 22h18" /> <path d="M14 22a7 7 0 1 0 0-14h-1" /> <path d="M9 14h2" /> <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" /> <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" /></svg></span>
+                <span class="program-tile-name">Medical Laboratory Sciences</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Radiologic%20Technology">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <path d="M7 12h10" /></svg></span>
+                <span class="program-tile-name">Radiologic Technology</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Physical%20Therapy">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="1" /> <path d="m9 20 3-6 3 6" /> <path d="m6 8 6 2 6-2" /> <path d="M12 10v4" /></svg></span>
+                <span class="program-tile-name">Physical Therapy</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Dentistry">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /> <path d="M8 14s1.5 2 4 2 4-2 4-2" /> <line x1="9" x2="9.01" y1="9" y2="9" /> <line x1="15" x2="15.01" y1="9" y2="9" /></svg></span>
+                <span class="program-tile-name">Dentistry</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Public%20Health">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="M9 12h6" /> <path d="M12 9v6" /></svg></span>
+                <span class="program-tile-name">Public Health</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Allied%20Health%20Sciences">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></svg></span>
+                <span class="program-tile-name">Allied Health Sciences</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+        </ul>
       </div>
     </section>
-
-    <section class="section programs programs-alt" aria-labelledby="pro-title">
-      <div class="wrap program-group">
-        <div class="program-group-head">
-          <h2 class="h2" id="pro-title">Professional &amp; Technology</h2>
-          <p>Nine programs for careers in technology, engineering, business and hospitality.</p>
+    <section class="section section-soft" id="professional" aria-labelledby="professional-title">
+      <div class="container">
+        <div class="category-head">
+          <div class="category-photo"><img src="assets/img/photos/technology-engineering.webp" alt="Engineers working together on a laptop in a technology lab" width="1200" height="800" loading="lazy" decoding="async"></div>
+          <div>
+            <h2 class="section-title" id="professional-title">Professional &amp; Technology</h2>
+            <p class="section-intro">Nine programs for careers in technology, engineering, business and hospitality. Select a program to enquire about it.</p>
+          </div>
         </div>
-        <ul class="program-list">
-            <li><a class="program" href="contact.html?program=Information%20Technology"><span class="program-name">Information Technology</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Computer%20Science"><span class="program-name">Computer Science</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Engineering"><span class="program-name">Engineering</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Artificial%20Intelligence"><span class="program-name">Artificial Intelligence</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Data%20Science"><span class="program-name">Data Science</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Cybersecurity"><span class="program-name">Cybersecurity</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Business%20Administration"><span class="program-name">Business Administration</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Accounting%20and%20Finance"><span class="program-name">Accounting and Finance</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=Hospitality%20and%20Tourism%20Management"><span class="program-name">Hospitality and Tourism Management</span><span class="program-ask">Ask about this program</span></a></li>
-          </ul>
+        <ul class="program-tiles">
+            <li>
+              <a class="program-tile" href="contact.html?program=Information%20Technology">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg></span>
+                <span class="program-tile-name">Information Technology</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Computer%20Science">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="16 18 22 12 16 6" /> <polyline points="8 6 2 12 8 18" /></svg></span>
+                <span class="program-tile-name">Computer Science</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Engineering">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /></svg></span>
+                <span class="program-tile-name">Engineering</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Artificial%20Intelligence">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /> <path d="M9 13a4.5 4.5 0 0 0 3-4" /> <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" /> <path d="M3.477 10.896a4 4 0 0 1 .585-.396" /> <path d="M6 18a4 4 0 0 1-1.967-.516" /> <path d="M12 13h4" /> <path d="M12 18h6a2 2 0 0 1 2 2v1" /> <path d="M12 8h8" /> <path d="M16 8V5a2 2 0 0 1 2-2" /> <circle cx="16" cy="13" r=".5" /> <circle cx="18" cy="3" r=".5" /> <circle cx="20" cy="21" r=".5" /> <circle cx="20" cy="8" r=".5" /></svg></span>
+                <span class="program-tile-name">Artificial Intelligence</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Data%20Science">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /></svg></span>
+                <span class="program-tile-name">Data Science</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Cybersecurity">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></svg></span>
+                <span class="program-tile-name">Cybersecurity</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Business%20Administration">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /></svg></span>
+                <span class="program-tile-name">Business Administration</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Accounting%20and%20Finance">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="16" height="20" x="4" y="2" rx="2" /> <line x1="8" x2="16" y1="6" y2="6" /> <line x1="16" x2="16" y1="14" y2="18" /> <path d="M16 10h.01" /> <path d="M12 10h.01" /> <path d="M8 10h.01" /> <path d="M12 14h.01" /> <path d="M8 14h.01" /> <path d="M12 18h.01" /> <path d="M8 18h.01" /></svg></span>
+                <span class="program-tile-name">Accounting and Finance</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=Hospitality%20and%20Tourism%20Management">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 20a1 1 0 0 1-1-1v-1a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1a1 1 0 0 1-1 1Z" /> <path d="M20 16a8 8 0 1 0-16 0" /> <path d="M12 4v4" /> <path d="M10 4h4" /></svg></span>
+                <span class="program-tile-name">Hospitality and Tourism Management</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+        </ul>
       </div>
     </section>
-
-    <section class="section programs" aria-labelledby="other-title">
-      <div class="wrap program-group">
-        <div class="program-group-head">
-          <h2 class="h2" id="other-title">Other academic programs</h2>
-          <p>
-            We may also support recruitment for other undergraduate, postgraduate, vocational, and professional
-            programs offered by partner institutions, subject to the institutions' admission requirements and
-            applicable regulations.
-          </p>
+    <section class="section" id="other" aria-labelledby="other-title">
+      <div class="container">
+        <div class="category-head">
+          <div class="category-photo"><img src="assets/img/photos/students-studying.webp" alt="Three students studying together with laptops at a table" width="1200" height="800" loading="lazy" decoding="async"></div>
+          <div>
+            <h2 class="section-title" id="other-title">Other Academic Programs</h2>
+            <p class="section-intro">We may also support recruitment for other undergraduate, postgraduate, vocational, and professional programs offered by partner institutions, subject to the institutions' admission requirements and applicable regulations.</p>
+          </div>
         </div>
-        <ul class="program-list">
-            <li><a class="program" href="contact.html?program=Another%20undergraduate%20program"><span class="program-name">Undergraduate programs</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=A%20postgraduate%20program"><span class="program-name">Postgraduate programs</span><span class="program-ask">Ask about this program</span></a></li>
-            <li><a class="program" href="contact.html?program=A%20vocational%20or%20professional%20program"><span class="program-name">Vocational and professional programs</span><span class="program-ask">Ask about this program</span></a></li>
-          </ul>
+        <ul class="program-tiles program-tiles-4">
+            <li>
+              <a class="program-tile" href="contact.html?program=Another%20undergraduate%20program">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg></span>
+                <span class="program-tile-name">Undergraduate Programs</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=A%20postgraduate%20program">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 6 4 14" /> <path d="M12 6v14" /> <path d="M8 8v12" /> <path d="M4 4v16" /></svg></span>
+                <span class="program-tile-name">Postgraduate Programs</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=A%20vocational%20program">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5" /> <path d="M14 6a6 6 0 0 1 6 6v3" /> <path d="M4 15v-3a6 6 0 0 1 6-6" /> <rect x="2" y="15" width="20" height="4" rx="1" /></svg></span>
+                <span class="program-tile-name">Vocational Programs</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="program-tile" href="contact.html?program=A%20professional%20program">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></svg></span>
+                <span class="program-tile-name">Professional Programs</span>
+                <span class="program-tile-cta">Enquire <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span>
+              </a>
+            </li>
+        </ul>
       </div>
     </section>
-
     <section class="cta-band">
-      <div class="wrap cta-band-inner">
-        <div>
-          <h2 class="cta-title">Not sure which program fits you?</h2>
+      <div class="container cta-band-inner">
+        <div class="cta-band-text">
+          <h2>Not sure which program is right for you?</h2>
           <p>Your first counseling session looks at your academic background, interests, career goals and preferred destination.</p>
         </div>
-        <a class="btn btn-brass" href="contact.html?program=I%27m%20not%20sure%20yet">Book counseling</a>
+        <div class="cta-band-actions">
+          <a class="btn btn-white" href="contact.html?program=I%27m%20not%20sure%20yet">Book a Counseling Session</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <p class="footer-name">Antony International Medical Studies</p>
-        <p class="footer-tagline">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+        <a href="index.html" class="footer-logo" aria-label="Antony International Medical Studies, home">
+          <img src="assets/img/logo-full.png" alt="Antony International Medical Studies logo" width="450" height="404" loading="lazy">
+        </a>
+        <p>Connecting global students with quality education and building a value-based future.</p>
       </div>
-      <div class="footer-contact">
-        <h2 class="footer-heading">Contact</h2>
-        <ul data-contact-list></ul>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <h2 class="footer-heading">Explore</h2>
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="student-journey.html">Student journey</a></li>
-          <li><a href="values.html">Values</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="student-journey.html">Student Journey</a></li>
+            <li><a href="values.html">Our Values</a></li>
+            <li><a href="partners.html">Partnerships</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="footer-col">
+        <h2 class="footer-title">Programs</h2>
+        <ul>
+            <li><a href="programs.html#medicine">Medicine &amp; Healthcare</a></li>
+            <li><a href="programs.html#professional">Professional &amp; Technology</a></li>
+            <li><a href="programs.html#other">Other Academic Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-title">Get in Touch</h2>
+        <ul class="footer-contact" data-contact-list></ul>
+        <a class="btn btn-primary btn-sm" href="contact.html">Book Counseling</a>
+      </div>
     </div>
-    <div class="wrap footer-base">
-      <p>&copy; <span data-year>2026</span> Antony International Medical Studies</p>
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
+        <p>&copy; <span data-year>2026</span> Antony International Medical Studies. All rights reserved.</p>
+        <p>Global Education. Professional Excellence. Human Values. Nation Building.</p>
+      </div>
     </div>
   </footer>
 

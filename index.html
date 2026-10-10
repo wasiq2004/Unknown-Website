@@ -1,19 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Antony International Medical Studies (AIMS)</title>
-  <meta name="description" content="Antony International Medical Studies connects students with recognized universities for Medicine, Nursing, Allied Health, Engineering, IT, Business and Hospitality, and supports them throughout their studies.">
-  <meta name="theme-color" content="#143D33">
-  <meta property="og:title" content="Antony International Medical Studies (AIMS)">
-  <meta property="og:description" content="Antony International Medical Studies connects students with recognized universities for Medicine, Nursing, Allied Health, Engineering, IT, Business and Hospitality, and supports them throughout their studies.">
+  <title>Antony International Medical Studies (AIMS) | Global Education, Professional Excellence</title>
+  <meta name="description" content="Antony International Medical Studies (AIMS) connects students from different countries with recognized universities for Medicine, Nursing, Allied Health Sciences, Engineering, IT, Business and Hospitality.">
+  <meta name="theme-color" content="#004090">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Antony International Medical Studies">
+  <meta property="og:title" content="Antony International Medical Studies (AIMS) | Global Education, Professional Excellence">
+  <meta property="og:description" content="Antony International Medical Studies (AIMS) connects students from different countries with recognized universities for Medicine, Nursing, Allied Health Sciences, Engineering, IT, Business and Hospitality.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (!("IntersectionObserver" in window)) return;
+      d.classList.add("js-motion");
+      setTimeout(function () { if (!window.AIMS_MOTION_READY) d.classList.remove("js-motion"); }, 3000);
+    })();
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -21,243 +36,418 @@
     "name": "Antony International Medical Studies",
     "alternateName": "AIMS",
     "slogan": "Educating young minds, developing character, connecting nations, and creating value for the future.",
-    "description": "International education and student recruitment consultancy for Medicine, Nursing, Allied Health Sciences, Engineering, Information Technology, Business, Hospitality and other professional programs."
+    "description": "International education and student recruitment consultancy connecting students from different countries with recognized universities and educational institutions."
   }
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" data-header>
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="AIMS home">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <ellipse cx="20" cy="20" rx="8" ry="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M3 14h34M3 26h34" stroke="currentColor" stroke-width="1.5"/>
-          <path class="brand-mark-rise" d="M9 31 L16 24 L22 26 L31 11" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">AIMS</span>
-          <span class="brand-full">Antony International Medical Studies</span>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Antony International Medical Studies, home">
+        <img class="brand-emblem" src="assets/img/logo-emblem.png" alt="" width="300" height="208">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">ANTONY</span>
+          <span class="brand-line brand-line-green">INTERNATIONAL</span>
+          <span class="brand-line">MEDICAL STUDIES</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="visually-hidden">Menu</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
-        <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="student-journey.html">Student journey</a>
-        <a href="values.html">Values</a>
-        <a href="partners.html">Partners</a>
-        <a class="btn btn-primary btn-small" href="contact.html">Book counseling</a>
+      <nav class="main-nav" id="main-nav" aria-label="Main" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="student-journey.html">Student Journey</a></li>
+          <li><a href="values.html">Our Values</a></li>
+          <li><a href="partners.html">Partnerships</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book Counseling</a>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-label>Open menu</span>
+        <svg class="icon icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></svg>
+        <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
 
     <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <h1 class="hero-title">Connecting global students with quality education and building a value-based future.</h1>
-          <p class="hero-lede">
-            Antony International Medical Studies connects students from different countries with recognized
-            universities for Medicine, Nursing, Allied Health Sciences, Engineering, IT, Business and Hospitality,
-            and stays between you, your parents and your institution throughout your entire studies.
-          </p>
-          <ul class="hero-points">
-            <li>Transparent guidance on courses and universities that match your qualifications</li>
-            <li>Help with documents, applications and admission</li>
-            <li>A point of contact for students and parents every semester</li>
-          </ul>
-        </div>
-        <div class="form-card" id="counseling" data-form-card>
-          <div data-form-view>
-            <h2 class="form-title">Book a counseling session</h2>
-            <p class="form-intro">Tell us a little about yourself. A counselor will get back to you to talk through your options.</p>
-
-            <form class="enquiry" novalidate data-form="counseling">
-              <div class="field">
-                <label for="f-name">Full name</label>
-                <input id="f-name" name="name" type="text" autocomplete="name" required>
-                <p class="field-error" id="f-name-err" hidden></p>
-              </div>
-              <div class="field">
-                <label for="f-country">Country you live in</label>
-                <input id="f-country" name="country" type="text" autocomplete="country-name" required>
-                <p class="field-error" id="f-country-err" hidden></p>
-              </div>
-              <div class="field">
-                <label for="f-program">Program you're interested in</label>
-                <select id="f-program" name="program" required>
-                  <option value="">Choose a program</option>
-                  <optgroup label="Medicine &amp; Healthcare">
-                    <option>Doctor of Medicine</option>
-                    <option>Nursing</option>
-                    <option>Pharmacy</option>
-                    <option>Medical Laboratory Sciences</option>
-                    <option>Radiologic Technology</option>
-                    <option>Physical Therapy</option>
-                    <option>Dentistry</option>
-                    <option>Public Health</option>
-                    <option>Allied Health Sciences</option>
-                  </optgroup>
-                  <optgroup label="Professional &amp; Technology">
-                    <option>Information Technology</option>
-                    <option>Computer Science</option>
-                    <option>Engineering</option>
-                    <option>Artificial Intelligence</option>
-                    <option>Data Science</option>
-                    <option>Cybersecurity</option>
-                    <option>Business Administration</option>
-                    <option>Accounting and Finance</option>
-                    <option>Hospitality and Tourism Management</option>
-                  </optgroup>
-                  <optgroup label="Other">
-                    <option>Another undergraduate program</option>
-                    <option>A postgraduate program</option>
-                    <option>A vocational or professional program</option>
-                    <option>I&#x27;m not sure yet</option>
-                  </optgroup>
-                </select>
-                <p class="field-error" id="f-program-err" hidden></p>
-              </div>
-              <div class="field">
-                <label for="f-contact">Email or WhatsApp number</label>
-                <input id="f-contact" name="contact" type="text" autocomplete="email" required>
-                <p class="field-error" id="f-contact-err" hidden></p>
-              </div>
-              <label class="check">
-                <input type="checkbox" name="parent">
-                <span>I'm a parent or guardian asking for a student</span>
-              </label>
-              <button class="btn btn-primary btn-block" type="submit">Request counseling</button>
-            </form>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></svg> International Education &amp; Student Recruitment Consultancy</p>
+          <h1 data-split>Connecting Global Students with Quality Education and Building a Value-Based Future</h1>
+          <p class="hero-lede">We connect students from different countries with recognized universities for Medicine, Nursing,
+            Allied Health Sciences, Engineering, IT, Business and Hospitality, and we stay with them, and their parents,
+            throughout their entire studies.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="contact.html">Book a Counseling Session</a>
+            <a class="btn btn-outline btn-lg" href="programs.html">Explore Programs</a>
           </div>
-          <div class="form-done" data-form-done hidden tabindex="-1">
-            <svg class="done-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M14 25l7 7 13-15"/></svg>
-            <h2 class="form-title">Your request is ready to send</h2>
-            <p>We've opened your email app with your details filled in. Press send and an AIMS counselor will reply.</p>
-            <p class="form-done-alt" data-done-alt></p>
-            <button class="btn btn-ghost" type="button" data-form-edit>Edit my details</button>
+        </div>
+        <div class="hero-media">
+          <div class="hero-photo"><img src="assets/img/photos/hero-students.webp" alt="University students in a classroom, one standing with her books and backpack" width="1600" height="1067" fetchpriority="high" decoding="async"></div>
+          <div class="hero-float">
+            <span class="icon-badge icon-badge-green"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span>
+            <div>
+              <p class="hero-float-title">With you every semester</p>
+              <p>The link between students, parents and the institution.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="purpose" aria-labelledby="purpose-title">
-      <div class="wrap">
-        <div class="purpose-head">
-          <h2 class="purpose-title" id="purpose-title">Our core purpose</h2>
-          <p class="purpose-lede">
-            We believe education should not only produce graduates. It should empower people who can make a
-            meaningful contribution to society as global citizens, making society stronger and safer.
-          </p>
+    <section class="highlights-wrap" aria-label="How AIMS helps">
+      <div class="container">
+        <div class="highlights">
+          <div class="highlight">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 22v-4a2 2 0 1 0-4 0v4" /> <path d="m18 10 3.447 1.724a1 1 0 0 1 .553.894V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7.382a1 1 0 0 1 .553-.894L6 10" /> <path d="M18 5v17" /> <path d="m4 6 7.106-3.553a2 2 0 0 1 1.788 0L20 6" /> <path d="M6 5v17" /> <circle cx="12" cy="9" r="2" /></svg></span>
+            <div>
+              <h3>Recognized Universities</h3>
+              <p>Programs in medicine, healthcare, technology, business and more.</p>
+            </div>
+          </div>
+          <div class="highlight">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /> <circle cx="12" cy="12" r="10" /></svg></span>
+            <div>
+              <h3>Transparent Guidance</h3>
+              <p>Honest advice on courses that match your qualifications and goals.</p>
+            </div>
+          </div>
+          <div class="highlight">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg></span>
+            <div>
+              <h3>Application &amp; Admission</h3>
+              <p>Support with documents, applications and the admission process.</p>
+            </div>
+          </div>
+          <div class="highlight">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span>
+            <div>
+              <h3>Support Every Semester</h3>
+              <p>A point of contact for students and parents throughout the degree.</p>
+            </div>
+          </div>
         </div>
-        <div class="stairs" data-stairs>
-          <svg class="stairs-line" aria-hidden="true" data-stairs-svg><path data-stairs-path/></svg>
-          <ol class="stairs-list" aria-label="Our core purpose">
-            <li class="step" style="--i:0"><span class="step-word">Education</span></li>
-            <li class="step" style="--i:1"><span class="step-word">Values</span></li>
-            <li class="step" style="--i:2"><span class="step-word">Skills</span></li>
-            <li class="step" style="--i:3"><span class="step-word">Leadership</span></li>
-            <li class="step" style="--i:4"><span class="step-word">Nation Building</span></li>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="who-title">
+      <div class="container split">
+        <div class="split-media">
+          <div class="photo-frame"><img src="assets/img/photos/students-collaborating.webp" alt="A diverse group of students working together around a laptop in a lecture hall" width="1400" height="788" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="split-content">
+          <div class="section-head">
+          <p class="section-label">About AIMS</p>
+          <h2 class="section-title" id="who-title">Who We Are</h2>
+        </div>
+          <p class="lead">Antony International Medical Studies (AIMS) is an international education and student recruitment consultancy dedicated to connecting students from different countries with recognized universities and educational institutions offering Medicine, Nursing, Allied Health Sciences, Engineering, Information Technology, Business, Hospitality, and other professional programs.</p>
+          <p>Our purpose goes beyond student recruitment. We aim to help young people access quality higher education, develop professional competence, strengthen ethical and social values, and become responsible contributors to the future development of their nations.</p>
+          <div class="vision-callout">
+            <span class="icon-badge icon-badge-green"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 13V2l8 4-8 4" /> <path d="M20.561 10.222a9 9 0 1 1-12.55-5.29" /> <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" /></svg></span>
+            <div>
+              <h3>Our Vision</h3>
+              <p>To build a globally connected generation of educated, skilled, ethical, and socially responsible professionals who create lasting value for their communities and nations.</p>
+            </div>
+          </div>
+          <a class="btn btn-primary" href="about.html">More About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <p class="section-label">Our Educational Focus</p>
+          <h2 class="section-title" id="programs-title">Programs We Recruit For</h2>
+          <p class="section-intro">Antony International Medical Studies can facilitate international student recruitment for programs in medicine, healthcare, technology, business and more.</p>
+        </div>
+        <div class="program-cards">
+          <article class="program-card">
+            <div class="program-card-media"><img src="assets/img/photos/medicine-healthcare.webp" alt="Healthcare professionals in scrubs walking along a hospital corridor" width="1200" height="800" loading="lazy" decoding="async"></div>
+            <div class="program-card-body">
+              <h3>Medicine &amp; Healthcare</h3>
+              <p class="program-card-count">9 programs</p>
+              <ul class="program-card-list">
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 2v2" /> <path d="M5 2v2" /> <path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /> <path d="M8 15a6 6 0 0 0 12 0v-3" /> <circle cx="20" cy="10" r="2" /></svg><span>Doctor of Medicine</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></svg><span>Nursing</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" /> <path d="m8.5 8.5 7 7" /></svg><span>Pharmacy</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 18h8" /> <path d="M3 22h18" /> <path d="M14 22a7 7 0 1 0 0-14h-1" /> <path d="M9 14h2" /> <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" /> <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" /></svg><span>Medical Laboratory Sciences</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <path d="M7 12h10" /></svg><span>Radiologic Technology</span></li>
+              </ul>
+              <a class="link-arrow" href="programs.html#medicine">View all 9 programs <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+            </div>
+          </article>
+          <article class="program-card">
+            <div class="program-card-media"><img src="assets/img/photos/technology-engineering.webp" alt="Engineers working together on a laptop in a technology lab" width="1200" height="800" loading="lazy" decoding="async"></div>
+            <div class="program-card-body">
+              <h3>Professional &amp; Technology</h3>
+              <p class="program-card-count">9 programs</p>
+              <ul class="program-card-list">
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="3" rx="2" /> <line x1="8" x2="16" y1="21" y2="21" /> <line x1="12" x2="12" y1="17" y2="21" /></svg><span>Information Technology</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="16 18 22 12 16 6" /> <polyline points="8 6 2 12 8 18" /></svg><span>Computer Science</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /></svg><span>Engineering</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" /> <path d="M9 13a4.5 4.5 0 0 0 3-4" /> <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" /> <path d="M3.477 10.896a4 4 0 0 1 .585-.396" /> <path d="M6 18a4 4 0 0 1-1.967-.516" /> <path d="M12 13h4" /> <path d="M12 18h6a2 2 0 0 1 2 2v1" /> <path d="M12 8h8" /> <path d="M16 8V5a2 2 0 0 1 2-2" /> <circle cx="16" cy="13" r=".5" /> <circle cx="18" cy="3" r=".5" /> <circle cx="20" cy="21" r=".5" /> <circle cx="20" cy="8" r=".5" /></svg><span>Artificial Intelligence</span></li>
+                <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="M18 17V9" /> <path d="M13 17V5" /> <path d="M8 17v-3" /></svg><span>Data Science</span></li>
+              </ul>
+              <a class="link-arrow" href="programs.html#professional">View all 9 programs <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+            </div>
+          </article>
+          <article class="program-card">
+            <div class="program-card-media"><img src="assets/img/photos/students-studying.webp" alt="Three students studying together with laptops at a table" width="1200" height="800" loading="lazy" decoding="async"></div>
+            <div class="program-card-body">
+              <h3>Other Academic Programs</h3>
+              <p class="program-card-count">Undergraduate, postgraduate, vocational &amp; professional</p>
+              <p class="program-card-text">We may also support recruitment for other undergraduate, postgraduate, vocational, and professional programs offered by partner institutions, subject to the institutions' admission requirements and applicable regulations.</p>
+              <a class="link-arrow" href="programs.html#other">Learn more <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-navy purpose" aria-labelledby="purpose-title">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <p class="section-label">What Drives Us</p>
+          <h2 class="section-title" id="purpose-title">Our Core Purpose</h2>
+          <p class="section-intro">We believe education should not only produce graduates; it should empower the people who can make a meaningful contribution to society as global citizens, making society stronger and safer.</p>
+        </div>
+        <ol class="track">
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg></span>
+              <span class="track-label">Education</span>
+            </li>
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg></span>
+              <span class="track-label">Values</span>
+            </li>
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></span>
+              <span class="track-label">Skills</span>
+            </li>
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /> <line x1="4" x2="4" y1="22" y2="15" /></svg></span>
+              <span class="track-label">Leadership</span>
+            </li>
+            <li class="track-step track-step-final">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" x2="21" y1="22" y2="22" /> <line x1="6" x2="6" y1="18" y2="11" /> <line x1="10" x2="10" y1="18" y2="11" /> <line x1="14" x2="14" y1="18" y2="11" /> <line x1="18" x2="18" y1="18" y2="11" /> <polygon points="12 2 20 7 4 7" /></svg></span>
+              <span class="track-label">Nation Building</span>
+            </li>
           </ol>
-        </div>
-        <a class="text-link text-link-light" href="about.html#core-purpose">Read more about our purpose</a>
       </div>
     </section>
 
-    <section class="section explore" aria-labelledby="explore-title">
-      <div class="wrap">
-        <h2 class="h2" id="explore-title">Find what you need</h2>
-        <ul class="explore-list">
-          <li>
-            <a class="explore-row" href="about.html">
-              <span class="explore-name">About AIMS</span>
-              <span class="explore-desc">Who we are, our vision and mission, our core purpose and our commitment to the future.</span>
-              <svg class="row-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
-            </a>
+    <section class="section" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-head-row">
+          <div class="section-head">
+          <p class="section-label">Our Student-Centered Approach</p>
+          <h2 class="section-title" id="journey-title">How We Support You</h2>
+          <p class="section-intro">We aim to support students throughout their international education journey, from your first counseling session to graduation and beyond.</p>
+        </div>
+          <a class="btn btn-outline" href="student-journey.html">See the Full Journey</a>
+        </div>
+        <h3 class="phase"><span class="phase-pill">Steps 1&ndash;4</span> Before Admission</h3>
+        <ol class="step-cards">
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">01</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" /> <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" /></svg></span>
+              </div>
+              <h3>Student Counseling</h3>
+              <p>Understanding the student's academic background, interests, career goals, and preferred destination.</p>
+            </li>
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">02</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" /> <path d="M15 5.764v15" /> <path d="M9 3.236v15" /></svg></span>
+              </div>
+              <h3>Course &amp; University Guidance</h3>
+              <p>Helping students identify programs that match their qualifications and career objectives.</p>
+            </li>
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">03</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg></span>
+              </div>
+              <h3>Application Assistance</h3>
+              <p>Supporting students with documentation and university application procedures.</p>
+            </li>
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">04</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg></span>
+              </div>
+              <h3>Admission Support</h3>
+              <p>Coordinating with partner institutions during the admission process.</p>
+            </li>
+        </ol>
+        <h3 class="phase phase-gap"><span class="phase-pill phase-pill-green">Steps 5&ndash;7</span> Throughout Your Studies</h3>
+        <ol class="step-cards step-cards-3" start="5">
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">05</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span>
+              </div>
+              <h3>The Face Between Parents, Students &amp; the Institution</h3>
+              <p>We stand between the parents and the institution, and between the students and the institution, facilitating day-to-day affairs and concerns related to their studies, each semester and annually.</p>
+            </li>
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">06</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /> <path d="m4.93 4.93 4.24 4.24" /> <path d="m14.83 9.17 4.24-4.24" /> <path d="m14.83 14.83 4.24 4.24" /> <path d="m9.17 14.83-4.24 4.24" /> <circle cx="12" cy="12" r="4" /></svg></span>
+              </div>
+              <h3>Student Support</h3>
+              <p>Maintaining communication with students and relevant institutional partners during their educational journey.</p>
+            </li>
+            <li class="step-card">
+              <div class="step-card-top">
+                <span class="step-num">07</span>
+                <span class="icon-badge icon-badge-sm"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /> <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /> <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /> <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg></span>
+              </div>
+              <h3>Career &amp; Future Development</h3>
+              <p>Encouraging students to develop professional, leadership, and service-oriented capabilities.</p>
+            </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-soft" aria-labelledby="values-title">
+      <div class="container">
+        <div class="section-head-row">
+          <div class="section-head">
+          <p class="section-label">Our Values</p>
+          <h2 class="section-title" id="values-title">What We Stand For</h2>
+          <p class="section-intro">Eight values guide how we advise students, represent institutions and work with families.</p>
+        </div>
+          <a class="btn btn-outline" href="values.html">Explore Our Values</a>
+        </div>
+        <ul class="value-tiles">
+          <li class="value-tile value-tile-feature">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 7h.01" /> <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20" /> <path d="m20 7 2 .5-2 .5" /> <path d="M10 18v3" /> <path d="M14 17.75V21" /> <path d="M7 18a6 6 0 0 0 3.84-10.61" /></svg></span>
+            <h3>God Fearing</h3>
+            <p>We believe that this is the source of our entire values and system.</p>
           </li>
-          <li>
-            <a class="explore-row" href="programs.html">
-              <span class="explore-name">Programs</span>
-              <span class="explore-desc">Eighteen programs across medicine, healthcare, technology and business, plus other academic programs.</span>
-              <svg class="row-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
-            </a>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></svg></span>
+            <h3>Integrity</h3>
           </li>
-          <li>
-            <a class="explore-row" href="student-journey.html">
-              <span class="explore-name">Student journey</span>
-              <span class="explore-desc">Seven steps of support, from your first counseling session through every semester of your studies.</span>
-              <svg class="row-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
-            </a>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" /> <circle cx="12" cy="8" r="6" /></svg></span>
+            <h3>Excellence</h3>
           </li>
-          <li>
-            <a class="explore-row" href="values.html">
-              <span class="explore-name">Values</span>
-              <span class="explore-desc">The eight values behind how we guide students and work with institutions.</span>
-              <svg class="row-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
-            </a>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /> <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66" /> <path d="m18 15-2-2" /> <path d="m15 18-2-2" /></svg></span>
+            <h3>Compassion</h3>
           </li>
-          <li>
-            <a class="explore-row" href="partners.html">
-              <span class="explore-name">Partners</span>
-              <span class="explore-desc">How universities, hospitals, agencies and other institutions can work with us.</span>
-              <svg class="row-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
-            </a>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /></svg></span>
+            <h3>Responsibility</h3>
           </li>
-          <li>
-            <a class="explore-row" href="contact.html">
-              <span class="explore-name">Contact</span>
-              <span class="explore-desc">Book a counseling session, or reach the AIMS team.</span>
-              <svg class="row-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
-            </a>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" /> <path d="M9 18h6" /> <path d="M10 22h4" /></svg></span>
+            <h3>Innovation</h3>
+          </li>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /> <path d="M2 12h20" /></svg></span>
+            <h3>Diversity</h3>
+          </li>
+          <li class="value-tile">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" /> <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 15 6 6" /> <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z" /></svg></span>
+            <h3>Service</h3>
           </li>
         </ul>
       </div>
     </section>
 
+    <section class="section" aria-labelledby="partner-title">
+      <div class="container split split-reverse">
+        <div class="split-media">
+          <div class="photo-frame"><img src="assets/img/photos/partnership-handshake.webp" alt="Two professionals shaking hands across a table" width="1920" height="1282" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="split-content">
+          <div class="section-head">
+          <p class="section-label">Our Partnership Model</p>
+          <h2 class="section-title" id="partner-title">Partner With AIMS</h2>
+          <p class="section-intro">Antony International Medical Studies seeks to develop professional relationships with:</p>
+        </div>
+          <ul class="check-list check-list-2">
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Universities and colleges</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Medical and healthcare institutions</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Government and educational agencies</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Hospitals and healthcare organizations</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>International education partners</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Student recruitment organizations</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Professional associations</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Training and skills-development institutions</span></li>
+          </ul>
+          <p>Through these partnerships, we aim to create a sustainable international education ecosystem connecting students, universities, healthcare institutions, industry, and communities.</p>
+          <a class="btn btn-primary" href="partners.html#partner-form">Propose a Partnership</a>
+        </div>
+      </div>
+    </section>
+
     <section class="statement" aria-labelledby="statement-title">
-      <div class="wrap">
-        <h2 class="statement-label" id="statement-title">Our guiding statement</h2>
-        <blockquote class="statement-quote">Educating young minds, developing character, connecting nations, and creating value for the future.</blockquote>
-        <p class="statement-body">Global Education. Professional Excellence. Human Values. Nation Building.</p>
-        <a class="btn btn-brass" href="contact.html">Book counseling</a>
+      <img src="assets/img/photos/graduation-caps.webp" alt="" width="1920" height="1280" loading="lazy" decoding="async" class="statement-img">
+      <div class="container statement-inner">
+        <h2 class="statement-label" id="statement-title">Our Guiding Statement</h2>
+        <svg class="icon statement-quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /> <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></svg>
+        <blockquote class="statement-quote"><p data-split>Educating young minds, developing character, connecting nations, and creating value for the future.</p></blockquote>
+        <p class="statement-signoff">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+        <div class="statement-actions">
+          <a class="btn btn-white" href="contact.html">Book a Counseling Session</a>
+          <a class="btn btn-outline-light" href="programs.html">Explore Programs</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <p class="footer-name">Antony International Medical Studies</p>
-        <p class="footer-tagline">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+        <a href="index.html" class="footer-logo" aria-label="Antony International Medical Studies, home">
+          <img src="assets/img/logo-full.png" alt="Antony International Medical Studies logo" width="450" height="404" loading="lazy">
+        </a>
+        <p>Connecting global students with quality education and building a value-based future.</p>
       </div>
-      <div class="footer-contact">
-        <h2 class="footer-heading">Contact</h2>
-        <ul data-contact-list></ul>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <h2 class="footer-heading">Explore</h2>
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="student-journey.html">Student journey</a></li>
-          <li><a href="values.html">Values</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="student-journey.html">Student Journey</a></li>
+            <li><a href="values.html">Our Values</a></li>
+            <li><a href="partners.html">Partnerships</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="footer-col">
+        <h2 class="footer-title">Programs</h2>
+        <ul>
+            <li><a href="programs.html#medicine">Medicine &amp; Healthcare</a></li>
+            <li><a href="programs.html#professional">Professional &amp; Technology</a></li>
+            <li><a href="programs.html#other">Other Academic Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-title">Get in Touch</h2>
+        <ul class="footer-contact" data-contact-list></ul>
+        <a class="btn btn-primary btn-sm" href="contact.html">Book Counseling</a>
+      </div>
     </div>
-    <div class="wrap footer-base">
-      <p>&copy; <span data-year>2026</span> Antony International Medical Studies</p>
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
+        <p>&copy; <span data-year>2026</span> Antony International Medical Studies. All rights reserved.</p>
+        <p>Global Education. Professional Excellence. Human Values. Nation Building.</p>
+      </div>
     </div>
   </footer>
 

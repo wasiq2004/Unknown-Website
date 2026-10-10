@@ -1,200 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Antony International Medical Studies</title>
+  <title>About Us | Antony International Medical Studies (AIMS)</title>
   <meta name="description" content="Who we are, our vision, mission, core purpose and commitment to the future.">
-  <meta name="theme-color" content="#143D33">
-  <meta property="og:title" content="About | Antony International Medical Studies">
-  <meta property="og:description" content="Who we are, our vision, mission, core purpose and commitment to the future.">
+  <meta name="theme-color" content="#004090">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Antony International Medical Studies">
+  <meta property="og:title" content="About Us | Antony International Medical Studies (AIMS)">
+  <meta property="og:description" content="Who we are, our vision, mission, core purpose and commitment to the future.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (!("IntersectionObserver" in window)) return;
+      d.classList.add("js-motion");
+      setTimeout(function () { if (!window.AIMS_MOTION_READY) d.classList.remove("js-motion"); }, 3000);
+    })();
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" data-header>
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="AIMS home">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <ellipse cx="20" cy="20" rx="8" ry="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M3 14h34M3 26h34" stroke="currentColor" stroke-width="1.5"/>
-          <path class="brand-mark-rise" d="M9 31 L16 24 L22 26 L31 11" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">AIMS</span>
-          <span class="brand-full">Antony International Medical Studies</span>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Antony International Medical Studies, home">
+        <img class="brand-emblem" src="assets/img/logo-emblem.png" alt="" width="300" height="208">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">ANTONY</span>
+          <span class="brand-line brand-line-green">INTERNATIONAL</span>
+          <span class="brand-line">MEDICAL STUDIES</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="visually-hidden">Menu</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="student-journey.html">Student journey</a>
-        <a href="values.html">Values</a>
-        <a href="partners.html">Partners</a>
-        <a class="btn btn-primary btn-small" href="contact.html">Book counseling</a>
+      <nav class="main-nav" id="main-nav" aria-label="Main" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="student-journey.html">Student Journey</a></li>
+          <li><a href="values.html">Our Values</a></li>
+          <li><a href="partners.html">Partnerships</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book Counseling</a>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-label>Open menu</span>
+        <svg class="icon icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></svg>
+        <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="page-head">
-      <div class="wrap page-head-grid">
-        <div>
-          <h1 class="page-title">About AIMS</h1>
-          <p class="page-lede">Connecting global students with quality education and building a value-based future.</p>
-        </div>
-        <nav class="toc" aria-label="On this page">
-          <h2 class="toc-title">On this page</h2>
+    <section class="page-banner">
+      <img src="assets/img/photos/lecture-hall.webp" alt="" width="1920" height="1280" fetchpriority="high" decoding="async" class="page-banner-img">
+      <div class="container page-banner-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
           <ol>
-            <li><a href="#who-we-are">Who we are</a></li>
-            <li><a href="#vision">Our vision</a></li>
-            <li><a href="#mission">Our mission</a></li>
-            <li><a href="#core-purpose">Our core purpose</a></li>
-            <li><a href="#commitment">Our commitment to the future</a></li>
-            <li><a href="#guiding-statement">Our guiding statement</a></li>
-            <li><a href="#next-generation">Our vision for the next generation</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">About Us</li>
           </ol>
         </nav>
+        <h1 data-split>About Us</h1>
+        <p>Connecting Global Students with Quality Education and Building a Value-Based Future.</p>
       </div>
     </section>
 
-    <section class="section about" id="who-we-are" aria-labelledby="who-title">
-      <div class="wrap about-grid">
-        <div class="about-intro">
-          <h2 class="h2" id="who-title">Who we are</h2>
-          <p class="lead">
-            Antony International Medical Studies (AIMS) is an international education and student recruitment
-            consultancy dedicated to connecting students from different countries with recognized universities and
-            educational institutions offering Medicine, Nursing, Allied Health Sciences, Engineering, Information
-            Technology, Business, Hospitality, and other professional programs.
-          </p>
-          <p>
-            Our purpose goes beyond student recruitment. We aim to help young people access quality higher education,
-            develop professional competence, strengthen ethical and social values, and become responsible contributors
-            to the future development of their nations.
-          </p>
+    <nav class="subnav" aria-label="On this page">
+      <div class="container">
+        <ul>
+          <li><a href="#who-we-are">Who We Are</a></li>
+          <li><a href="#vision-mission">Vision &amp; Mission</a></li>
+          <li><a href="#core-purpose">Core Purpose</a></li>
+          <li><a href="#commitment">Our Commitment</a></li>
+          <li><a href="#guiding-statement">Guiding Statement</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section" id="who-we-are" aria-labelledby="who-title">
+      <div class="container split">
+        <div class="split-content">
+          <div class="section-head">
+          <p class="section-label">About AIMS</p>
+          <h2 class="section-title" id="who-title">Who We Are</h2>
         </div>
-
-        <section class="vision" id="vision" aria-labelledby="vision-title">
-          <h2 class="vision-label" id="vision-title">Our vision</h2>
-          <p class="vision-text">
-            To build a globally connected generation of educated, skilled, ethical, and socially responsible
-            professionals who create lasting value for their communities and nations.
-          </p>
-        </section>
+          <p class="lead">Antony International Medical Studies (AIMS) is an international education and student recruitment consultancy dedicated to connecting students from different countries with recognized universities and educational institutions offering Medicine, Nursing, Allied Health Sciences, Engineering, Information Technology, Business, Hospitality, and other professional programs.</p>
+          <p>Our purpose goes beyond student recruitment. We aim to help young people access quality higher education, develop professional competence, strengthen ethical and social values, and become responsible contributors to the future development of their nations.</p>
+        </div>
+        <div class="split-media">
+          <div class="photo-frame"><img src="assets/img/photos/students-collaborating.webp" alt="A diverse group of students working together around a laptop in a lecture hall" width="1400" height="788" loading="lazy" decoding="async"></div>
+        </div>
       </div>
     </section>
 
-    <section class="section mission-section" id="mission" aria-labelledby="mission-title">
-      <div class="wrap">
-        <h2 class="h2" id="mission-title">Our mission</h2>
-        <p class="section-intro">Our mission is to:</p>
-        <ul class="mission-list">
-          <li>Connect international students with suitable and quality educational opportunities.</li>
-          <li>Facilitate access to medical, healthcare, professional, and other higher-education programs.</li>
-          <li>Build strong partnerships with universities, governments, hospitals, educational institutions, and international organizations.</li>
-          <li>Provide students with transparent guidance throughout the admission process, and with other services throughout their entire studies.</li>
-          <li>Promote education founded on in-depth knowledge, integrity, compassion, innovation, leadership, and service.</li>
-          <li>Support students in adapting successfully to international academic and cultural environments, and equip them with global perspectives.</li>
-          <li>Encourage graduates to use their knowledge and professional skills for the development of their home countries and the global community.</li>
+    <section class="section section-soft" id="vision-mission" aria-label="Our vision and mission">
+      <div class="container vm-grid">
+        <div class="vision-card">
+          <span class="icon-badge icon-badge-light"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 13V2l8 4-8 4" /> <path d="M20.561 10.222a9 9 0 1 1-12.55-5.29" /> <path d="M8.002 9.997a5 5 0 1 0 8.9 2.02" /></svg></span>
+          <h2>Our Vision</h2>
+          <p>To build a globally connected generation of educated, skilled, ethical, and socially responsible professionals who create lasting value for their communities and nations.</p>
+          <img src="assets/img/photos/study-stethoscope.webp" alt="" width="1400" height="933" loading="lazy" decoding="async" class="vision-card-img">
+        </div>
+        <div class="mission-card">
+          <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /> <circle cx="12" cy="12" r="10" /></svg></span>
+          <h2>Our Mission</h2>
+          <p class="mission-intro">Our mission is to:</p>
+          <ul class="check-list">
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Connect international students with suitable and quality educational opportunities.</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Facilitate access to medical, healthcare, professional, and other higher-education programs.</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Build strong partnerships with universities, governments, hospitals, educational institutions, and international organizations.</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Provide students with transparent guidance throughout the admission process and other services throughout their entire studies.</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Promote education founded on in-depth knowledge, integrity, compassion, innovation, leadership, and service.</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Support students in adapting successfully to international academic and cultural environments and equip them with global perspectives.</span></li>
+            <li><svg class="icon check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Encourage graduates to use their knowledge and professional skills for the development of their home countries and the global community.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-navy purpose" id="core-purpose" aria-labelledby="purpose-title">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <p class="section-label">What Drives Us</p>
+          <h2 class="section-title" id="purpose-title">Our Core Purpose</h2>
+          <p class="section-intro">We believe education should not only produce graduates; it should empower the people who can make a meaningful contribution to society as global citizens, making society stronger and safer.</p>
+        </div>
+        <ol class="track">
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg></span>
+              <span class="track-label">Education</span>
+            </li>
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg></span>
+              <span class="track-label">Values</span>
+            </li>
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></span>
+              <span class="track-label">Skills</span>
+            </li>
+            <li class="track-step">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /> <line x1="4" x2="4" y1="22" y2="15" /></svg></span>
+              <span class="track-label">Leadership</span>
+            </li>
+            <li class="track-step track-step-final">
+              <span class="track-icon"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="3" x2="21" y1="22" y2="22" /> <line x1="6" x2="6" y1="18" y2="11" /> <line x1="10" x2="10" y1="18" y2="11" /> <line x1="14" x2="14" y1="18" y2="11" /> <line x1="18" x2="18" y1="18" y2="11" /> <polygon points="12 2 20 7 4 7" /></svg></span>
+              <span class="track-label">Nation Building</span>
+            </li>
+          </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="opp-title">
+      <div class="container">
+        <div class="section-head section-head-center">
+          <p class="section-label">Learn, Enrich, Develop, Serve, Lead, Build</p>
+          <h2 class="section-title" id="opp-title">Opportunities for Our Students</h2>
+          <p class="section-intro">Through international education, we seek to create opportunities for students to:</p>
+        </div>
+        <ul class="feature-grid">
+          <li class="feature-card">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 7v14" /> <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></svg></span>
+            <h3>Learn</h3>
+            <p>Gain strong academic and professional knowledge.</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /></svg></span>
+            <h3>Enrich</h3>
+            <p>Knowledge that transforms people.</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /> <polyline points="16 7 22 7 22 13" /></svg></span>
+            <h3>Develop</h3>
+            <p>Build practical skills, confidence, discipline, and leadership.</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 14h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16" /> <path d="m7 20 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 15 6 6" /> <path d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z" /></svg></span>
+            <h3>Serve</h3>
+            <p>Apply their knowledge to improve the lives of others.</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /> <circle cx="12" cy="12" r="10" /></svg></span>
+            <h3>Lead</h3>
+            <p>Become responsible and accountable professionals and future leaders.</p>
+          </li>
+          <li class="feature-card">
+            <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /> <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /> <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /> <path d="M10 6h4" /> <path d="M10 10h4" /> <path d="M10 14h4" /> <path d="M10 18h4" /></svg></span>
+            <h3>Build</h3>
+            <p>Contribute to the economic, social, healthcare, technological, and educational development of their nations.</p>
+          </li>
         </ul>
       </div>
     </section>
 
-    <section class="purpose" id="core-purpose" aria-labelledby="core-title">
-      <div class="wrap">
-        <h2 class="purpose-title" id="core-title">Our core purpose</h2>
-        <ol class="chain" aria-label="Education, then values, then skills, then leadership, then nation building"><li>Education</li><li>Values</li><li>Skills</li><li>Leadership</li><li>Nation Building</li></ol>
-        <p class="purpose-belief">
-          We believe education should not only produce graduates; it should empower the people who can make a
-          meaningful contribution to society as global citizens, making society stronger and safer.
-        </p>
-      </div>
-    </section>
-
-    <section class="section growth" aria-labelledby="growth-title">
-      <div class="wrap">
-        <h2 class="h2 growth-title" id="growth-title">Through international education, we seek to create opportunities for students to:</h2>
-        <dl class="growth-grid">
-          <div class="growth-item"><dt>Learn</dt><dd>Gain strong academic and professional knowledge.</dd></div>
-          <div class="growth-item"><dt>Enrich</dt><dd>Knowledge that transforms people.</dd></div>
-          <div class="growth-item"><dt>Develop</dt><dd>Build practical skills, confidence, discipline, and leadership.</dd></div>
-          <div class="growth-item"><dt>Serve</dt><dd>Apply their knowledge to improve the lives of others.</dd></div>
-          <div class="growth-item"><dt>Lead</dt><dd>Become responsible and accountable professionals and future leaders.</dd></div>
-          <div class="growth-item"><dt>Build</dt><dd>Contribute to the economic, social, healthcare, technological, and educational development of their nations.</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="section commitment" id="commitment" aria-labelledby="commitment-title">
-      <div class="wrap">
-        <h2 class="h3 commitment-label" id="commitment-title">Our commitment to the future</h2>
-        <p class="commitment-lead">The future of every nation depends greatly on the quality of its young people.</p>
-        <p class="commitment-intro">Antony International Medical Studies seeks to contribute to that future by helping students receive education that combines:</p>
-        <p class="formula" aria-label="Knowledge plus Skills plus Character plus Leadership plus Service"><span>Knowledge</span><span class="plus" aria-hidden="true">+</span><span>Skills</span><span class="plus" aria-hidden="true">+</span><span>Character</span><span class="plus" aria-hidden="true">+</span><span>Leadership</span><span class="plus" aria-hidden="true">+</span><span>Service</span></p>
-        <p class="commitment-body">
-          Our long-term goal is to help create a generation of professionals who are not only successful in their
-          careers, but also capable of contributing positively to healthcare, technology, business, education,
-          economic development, and society.
-        </p>
+    <section class="section section-soft" id="commitment" aria-labelledby="commitment-title">
+      <div class="container commitment-grid">
+        <div>
+          <div class="section-head">
+          <p class="section-label">Looking Ahead</p>
+          <h2 class="section-title" id="commitment-title">Our Commitment to the Future</h2>
+        </div>
+          <p class="lead lead-strong">The future of every nation depends greatly on the quality of its young people.</p>
+          <p>Antony International Medical Studies seeks to contribute to that future by helping students receive education that combines:</p>
+          <p>Our long-term goal is to help create a generation of professionals who are not only successful in their careers, but also capable of contributing positively to healthcare, technology, business, education, economic development, and society.</p>
+        </div>
+        <div class="formula-card">
+          <ol class="formula">
+            <li><span class="formula-word">Knowledge</span></li>
+            <li><span class="formula-word">Skills</span></li>
+            <li><span class="formula-word">Character</span></li>
+            <li><span class="formula-word">Leadership</span></li>
+            <li><span class="formula-word">Service</span></li>
+          </ol>
+        </div>
       </div>
     </section>
 
     <section class="statement" id="guiding-statement" aria-labelledby="statement-title">
-      <div class="wrap">
-        <h2 class="statement-label" id="statement-title">Our guiding statement</h2>
-        <blockquote class="statement-quote">Educating young minds, developing character, connecting nations, and creating value for the future.</blockquote>
-
-        <div class="next-gen" id="next-generation">
-          <h2 class="next-gen-title">Our vision for the next generation</h2>
-          <p class="statement-body">We envision an international education network where students from different countries can access appropriate educational opportunities, develop professional excellence, understand global cultures, and return to their communities as capable and responsible professionals.</p>
+      <img src="assets/img/photos/graduation-caps.webp" alt="" width="1920" height="1280" loading="lazy" decoding="async" class="statement-img">
+      <div class="container statement-inner">
+        <h2 class="statement-label" id="statement-title">Our Guiding Statement</h2>
+        <svg class="icon statement-quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /> <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" /></svg>
+        <blockquote class="statement-quote"><p data-split>Educating young minds, developing character, connecting nations, and creating value for the future.</p></blockquote>
+        <div class="next-gen">
+          <h2>Our Vision for the Next Generation</h2>
+          <p>We envision an international education network where students from different countries can access appropriate educational opportunities, develop professional excellence, understand global cultures, and return to their communities as capable and responsible professionals.</p>
         </div>
-
-        <p class="signoff"><span>Antony International Medical Studies</span>Global Education. Professional Excellence. Human Values. Nation Building.</p>
-        <a class="btn btn-brass" href="contact.html">Book counseling</a>
+        <p class="statement-signoff">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+        <div class="statement-actions">
+          <a class="btn btn-white" href="contact.html">Book a Counseling Session</a>
+          <a class="btn btn-outline-light" href="programs.html">Explore Programs</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <p class="footer-name">Antony International Medical Studies</p>
-        <p class="footer-tagline">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+        <a href="index.html" class="footer-logo" aria-label="Antony International Medical Studies, home">
+          <img src="assets/img/logo-full.png" alt="Antony International Medical Studies logo" width="450" height="404" loading="lazy">
+        </a>
+        <p>Connecting global students with quality education and building a value-based future.</p>
       </div>
-      <div class="footer-contact">
-        <h2 class="footer-heading">Contact</h2>
-        <ul data-contact-list></ul>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <h2 class="footer-heading">Explore</h2>
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="student-journey.html">Student journey</a></li>
-          <li><a href="values.html">Values</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="student-journey.html">Student Journey</a></li>
+            <li><a href="values.html">Our Values</a></li>
+            <li><a href="partners.html">Partnerships</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="footer-col">
+        <h2 class="footer-title">Programs</h2>
+        <ul>
+            <li><a href="programs.html#medicine">Medicine &amp; Healthcare</a></li>
+            <li><a href="programs.html#professional">Professional &amp; Technology</a></li>
+            <li><a href="programs.html#other">Other Academic Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-title">Get in Touch</h2>
+        <ul class="footer-contact" data-contact-list></ul>
+        <a class="btn btn-primary btn-sm" href="contact.html">Book Counseling</a>
+      </div>
     </div>
-    <div class="wrap footer-base">
-      <p>&copy; <span data-year>2026</span> Antony International Medical Studies</p>
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
+        <p>&copy; <span data-year>2026</span> Antony International Medical Studies. All rights reserved.</p>
+        <p>Global Education. Professional Excellence. Human Values. Nation Building.</p>
+      </div>
     </div>
   </footer>
 

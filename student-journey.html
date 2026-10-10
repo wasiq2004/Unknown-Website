@@ -1,108 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Student journey | Antony International Medical Studies</title>
-  <meta name="description" content="Seven steps of support, from student counseling to career development, throughout your entire studies.">
-  <meta name="theme-color" content="#143D33">
-  <meta property="og:title" content="Student journey | Antony International Medical Studies">
-  <meta property="og:description" content="Seven steps of support, from student counseling to career development, throughout your entire studies.">
+  <title>Student Journey | Antony International Medical Studies (AIMS)</title>
+  <meta name="description" content="Seven steps of support from student counseling to career development, throughout your entire studies.">
+  <meta name="theme-color" content="#004090">
   <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:site_name" content="Antony International Medical Studies">
+  <meta property="og:title" content="Student Journey | Antony International Medical Studies (AIMS)">
+  <meta property="og:description" content="Seven steps of support from student counseling to career development, throughout your entire studies.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (!("IntersectionObserver" in window)) return;
+      d.classList.add("js-motion");
+      setTimeout(function () { if (!window.AIMS_MOTION_READY) d.classList.remove("js-motion"); }, 3000);
+    })();
+  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" data-header>
-    <div class="wrap header-inner">
-      <a class="brand" href="index.html" aria-label="AIMS home">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <ellipse cx="20" cy="20" rx="8" ry="18.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M3 14h34M3 26h34" stroke="currentColor" stroke-width="1.5"/>
-          <path class="brand-mark-rise" d="M9 31 L16 24 L22 26 L31 11" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">AIMS</span>
-          <span class="brand-full">Antony International Medical Studies</span>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Antony International Medical Studies, home">
+        <img class="brand-emblem" src="assets/img/logo-emblem.png" alt="" width="300" height="208">
+        <span class="brand-text" aria-hidden="true">
+          <span class="brand-name">ANTONY</span>
+          <span class="brand-line brand-line-green">INTERNATIONAL</span>
+          <span class="brand-line">MEDICAL STUDIES</span>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="visually-hidden">Menu</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main" data-nav>
-        <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="student-journey.html" aria-current="page">Student journey</a>
-        <a href="values.html">Values</a>
-        <a href="partners.html">Partners</a>
-        <a class="btn btn-primary btn-small" href="contact.html">Book counseling</a>
+      <nav class="main-nav" id="main-nav" aria-label="Main" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="student-journey.html" aria-current="page">Student Journey</a></li>
+          <li><a href="values.html">Our Values</a></li>
+          <li><a href="partners.html">Partnerships</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="contact.html">Book Counseling</a>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-label>Open menu</span>
+        <svg class="icon icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /></svg>
+        <svg class="icon icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg>
+      </button>
     </div>
   </header>
 
   <main id="main">
 
-    <section class="page-head">
-      <div class="wrap page-head-grid">
-        <div>
-          <h1 class="page-title">Our student-centered approach</h1>
-          <p class="page-lede">We aim to support students throughout their international education journey.</p>
-        </div>
-        
+    <section class="page-banner">
+      <img src="assets/img/photos/counseling-session.webp" alt="" width="1920" height="1280" fetchpriority="high" decoding="async" class="page-banner-img">
+      <div class="container page-banner-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Student Journey</li>
+          </ol>
+        </nav>
+        <h1 data-split>Our Student-Centered Approach</h1>
+        <p>We aim to support students throughout their international education journey.</p>
       </div>
     </section>
 
-    <section class="section journey" aria-label="The seven steps">
-      <div class="wrap journey-grid">
-        <div class="journey-head">
-          <p class="journey-summary">
-            Steps 1 to 4 take you from your first question to admission. Steps 5 to 7 continue every semester
-            until you graduate, for you and for your parents.
-          </p>
-          <a class="btn btn-primary" href="contact.html">Start with step one</a>
-        </div>
+    <section class="section" aria-label="Seven steps of support">
+      <div class="container journey-grid">
+        <aside class="journey-aside">
+          <div class="aside-card">
+            <div class="aside-photo"><img src="assets/img/photos/conversation.webp" alt="A counselor in conversation with a student at a table by the window" width="1920" height="1280" loading="lazy" decoding="async"></div>
+            <div class="aside-body">
+              <h2>Seven steps, one point of contact</h2>
+              <p>Steps 1 to 4 take you from your first question to admission. Steps 5 to 7 continue every semester
+                until you graduate, for you and for your parents.</p>
+              <a class="btn btn-primary btn-block" href="contact.html">Start With Step One</a>
+            </div>
+          </div>
+        </aside>
+
         <div class="timeline">
-          <h2 class="phase">Before you are admitted</h2>
-          <ol class="steps" start="1">
-            <li class="tl-step">
-              <h3>Student counseling</h3>
-              <p>Understanding the student's academic background, interests, career goals, and preferred destination.</p>
+          <h2 class="phase"><span class="phase-pill">Steps 1&ndash;4</span> Before Admission</h2>
+          <ol class="tl-list">
+            <li class="tl-item">
+              <span class="tl-marker"><span class="tl-num">1</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z" /> <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" /></svg></span>
+                <div>
+                  <h3>Student Counseling</h3>
+                  <p>Understanding the student's academic background, interests, career goals, and preferred destination.</p>
+                </div>
+              </div>
             </li>
-            <li class="tl-step">
-              <h3>Course and university guidance</h3>
-              <p>Helping students identify programs that match their qualifications and career objectives.</p>
+            <li class="tl-item">
+              <span class="tl-marker"><span class="tl-num">2</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z" /> <path d="M15 5.764v15" /> <path d="M9 3.236v15" /></svg></span>
+                <div>
+                  <h3>Course &amp; University Guidance</h3>
+                  <p>Helping students identify programs that match their qualifications and career objectives.</p>
+                </div>
+              </div>
             </li>
-            <li class="tl-step">
-              <h3>Application assistance</h3>
-              <p>Supporting students with documentation and university application procedures.</p>
+            <li class="tl-item">
+              <span class="tl-marker"><span class="tl-num">3</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg></span>
+                <div>
+                  <h3>Application Assistance</h3>
+                  <p>Supporting students with documentation and university application procedures.</p>
+                </div>
+              </div>
             </li>
-            <li class="tl-step">
-              <h3>Admission support</h3>
-              <p>Coordinating with partner institutions during the admission process.</p>
+            <li class="tl-item">
+              <span class="tl-marker"><span class="tl-num">4</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m9 12 2 2 4-4" /></svg></span>
+                <div>
+                  <h3>Admission Support</h3>
+                  <p>Coordinating with partner institutions during the admission process.</p>
+                </div>
+              </div>
             </li>
           </ol>
-          <h2 class="phase phase-ongoing">Throughout your entire studies</h2>
-          <ol class="steps steps-ongoing" start="5">
-            <li class="tl-step tl-step-key">
-              <h3>The face between parents, students and the institution</h3>
-              <p>We stand between the parents and the institution, and between the students and the institution, facilitating day-to-day affairs and concerns related to their studies, every semester and every year.</p>
+          <h2 class="phase"><span class="phase-pill phase-pill-green">Steps 5&ndash;7</span> Throughout Your Studies</h2>
+          <ol class="tl-list tl-list-ongoing" start="5">
+            <li class="tl-item tl-item-key">
+              <span class="tl-marker"><span class="tl-num">5</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span>
+                <div>
+                  <h3>The Face Between Parents, Students &amp; the Institution</h3>
+                  <p>We stand between the parents and the institution, and between the students and the institution, facilitating day-to-day affairs and concerns related to their studies, each semester and annually.</p>
+                </div>
+              </div>
             </li>
-            <li class="tl-step">
-              <h3>Student support</h3>
-              <p>Maintaining communication with students and relevant institutional partners during their educational journey.</p>
+            <li class="tl-item">
+              <span class="tl-marker"><span class="tl-num">6</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /> <path d="m4.93 4.93 4.24 4.24" /> <path d="m14.83 9.17 4.24-4.24" /> <path d="m14.83 14.83 4.24 4.24" /> <path d="m9.17 14.83-4.24 4.24" /> <circle cx="12" cy="12" r="4" /></svg></span>
+                <div>
+                  <h3>Student Support</h3>
+                  <p>Maintaining communication with students and relevant institutional partners during their educational journey.</p>
+                </div>
+              </div>
             </li>
-            <li class="tl-step">
-              <h3>Career and future development</h3>
-              <p>Encouraging students to develop professional, leadership, and service-oriented capabilities.</p>
+            <li class="tl-item">
+              <span class="tl-marker"><span class="tl-num">7</span></span>
+              <div class="tl-card">
+                <span class="icon-badge"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /> <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /> <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /> <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></svg></span>
+                <div>
+                  <h3>Career &amp; Future Development</h3>
+                  <p>Encouraging students to develop professional, leadership, and service-oriented capabilities.</p>
+                </div>
+              </div>
             </li>
           </ol>
         </div>
@@ -110,41 +176,58 @@
     </section>
 
     <section class="cta-band">
-      <div class="wrap cta-band-inner">
-        <div>
-          <h2 class="cta-title">Parents are part of the journey too.</h2>
-          <p>AIMS is the face between parents and the institution, so families always know who to ask about day-to-day matters and study concerns.</p>
+      <div class="container cta-band-inner">
+        <div class="cta-band-text">
+          <h2>Parents are part of the journey too.</h2>
+          <p>AIMS is the face between parents and the institution, so families always know who to contact about day-to-day matters and study concerns.</p>
         </div>
-        <a class="btn btn-brass" href="contact.html">Talk to a counselor</a>
+        <div class="cta-band-actions">
+          <a class="btn btn-white" href="contact.html">Talk to a Counselor</a>
+          <a class="btn btn-outline-light" href="values.html">Our Values</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <p class="footer-name">Antony International Medical Studies</p>
-        <p class="footer-tagline">Global Education. Professional Excellence. Human Values. Nation Building.</p>
+        <a href="index.html" class="footer-logo" aria-label="Antony International Medical Studies, home">
+          <img src="assets/img/logo-full.png" alt="Antony International Medical Studies logo" width="450" height="404" loading="lazy">
+        </a>
+        <p>Connecting global students with quality education and building a value-based future.</p>
       </div>
-      <div class="footer-contact">
-        <h2 class="footer-heading">Contact</h2>
-        <ul data-contact-list></ul>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <h2 class="footer-heading">Explore</h2>
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="programs.html">Programs</a></li>
-          <li><a href="student-journey.html">Student journey</a></li>
-          <li><a href="values.html">Values</a></li>
-          <li><a href="partners.html">Partners</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="student-journey.html">Student Journey</a></li>
+            <li><a href="values.html">Our Values</a></li>
+            <li><a href="partners.html">Partnerships</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="footer-col">
+        <h2 class="footer-title">Programs</h2>
+        <ul>
+            <li><a href="programs.html#medicine">Medicine &amp; Healthcare</a></li>
+            <li><a href="programs.html#professional">Professional &amp; Technology</a></li>
+            <li><a href="programs.html#other">Other Academic Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h2 class="footer-title">Get in Touch</h2>
+        <ul class="footer-contact" data-contact-list></ul>
+        <a class="btn btn-primary btn-sm" href="contact.html">Book Counseling</a>
+      </div>
     </div>
-    <div class="wrap footer-base">
-      <p>&copy; <span data-year>2026</span> Antony International Medical Studies</p>
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
+        <p>&copy; <span data-year>2026</span> Antony International Medical Studies. All rights reserved.</p>
+        <p>Global Education. Professional Excellence. Human Values. Nation Building.</p>
+      </div>
     </div>
   </footer>
 
